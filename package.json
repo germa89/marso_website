@@ -6,11 +6,12 @@
   "scripts": {
     "install-deps": "npm install",
     "start": "http-server -o",
-    "build": "npm run start",
+    "build": "npm run build-mustache && npm run start",
     "test": "http-server -o",
     "serve": "http-server -o",
     "format": "prettier --write .",
-    "build-vue": "vue-cli-service build"
+    "build-vue": "vue-cli-service build",
+    "build-mustache": "mustache template.json index.template > index.html"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
     "prettier": "^3.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "mustache": "^4.2.0"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.5.0",

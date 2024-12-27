@@ -7,19 +7,19 @@
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content=
+      content={{ meta.description }}
     />
     <meta
       name="keywords"
-      content=
+      content={{ meta.keywords }}
     />
-    <meta name="author" content="Distribuciones Marso" />
-    <meta name="theme-color" content="#fafbfc" />
+    <meta name="author" content="{{ meta.author }}" />
+    <meta name="theme-color" content="{{ meta.theme-color }}" />
     <link
       rel="canonical"
-      href="https:&#x2F;&#x2F;hoangsonww.github.io&#x2F;Huong-Hua-Co-Ltd&#x2F;"
+      href="{{ canonical }}"
     />
-    <meta http-equiv="content-language" content="es" />
+    <meta http-equiv="content-language" content="{{ meta.language }}" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="rating" content="General" />
@@ -29,49 +29,49 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https:&#x2F;&#x2F;hoangsonww.github.io&#x2F;Huong-Hua-Co-Ltd&#x2F;"
+      content="{{ canonical }}"
     />
     <meta
       property="og:title"
-      content="Distribuciones Marso - Su distribuidor de confianza"
+      content="{{ title }} - {{ subtitle }}"
     />
     <meta
       property="og:description"
-      content=""
+      content="{{ meta.description }}"
     />
-    <meta property="og:image" content="images&#x2F;logo_marso_invert_transparent.png" />
+    <meta property="og:image" content="{{ logo-image }}" />
     <link
       rel="alternate"
       hreflang="en"
-      href="https:&#x2F;&#x2F;hoangsonww.github.io&#x2F;Huong-Hua-Co-Ltd&#x2F;"
+      href="{{ canonical }}"
     />
     <link
       rel="alternate"
       hreflang="vi"
-      href="https:&#x2F;&#x2F;hoangsonww.github.io&#x2F;Huong-Hua-Co-Ltd&#x2F;"
+      href="{{ canonical }}"
     />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="images&#x2F;logo_marso_invert_transparent.png" />
+    <meta name="twitter:card" content="{{ logo-image }}" />
     <meta
       name="twitter:title"
-      content="Distribuciones Marso - Su distribuidor de confianza"
+      content="{{ title }} - {{ subtitle }}"
     />
     <meta
       name="twitter:description"
-      content=""
+      content="{{ meta.description }}"
     />
-    <meta name="twitter:image" content="images&#x2F;logo_marso_invert_transparent.png" />
-    <meta name="google-adsense-account" content="ca-pub-6608388491200814" />
+    <meta name="twitter:image" content="{{ logo-image }}" />
+    <meta name="google-adsense-account" content="{{ google.adsense-account }}" />
 
-    <title>Distribuciones Marso - Official Website</title>
+    <title>{{ title }} - Official Website</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="icon" href="images&#x2F;logo_marso_invert_transparent.png" />
+    <link rel="icon" href="{{ logo-image }}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
@@ -97,7 +97,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <script src="./js/main.js"></script>
-    <link rel="icon" type="image/x-icon" href="images&#x2F;favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ favicon }}" />
     <link rel="manifest" href="manifest.json" />
 
     <script
@@ -110,7 +110,7 @@
   <!-- Google tag (gtag.js) -->
   <script
     async
-    src="https://www.googletagmanager.com/gtag/js?id=G-8E7FN4J1GC"
+    src="https://www.googletagmanager.com/gtag/js?id={{ google.analytics }}"
   ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -119,27 +119,27 @@
     }
     gtag("js", new Date());
 
-    gtag("config", "G-8E7FN4J1GC");
+    gtag("config", "{{ google.analytics }}");
   </script>
 
   <body>
     <header class="header" style="z-index: 1001">
       <a href="#" class="logo"
         ><img
-          src="images&#x2F;logo_marso_invert_transparent.png"
+          src="{{ logo-image }}"
           alt="Company Logo"
-          style="width: 150px; height: 90px; border-radius: 4px"
+          {{{ logo-format }}}
       /></a>
       <div class="fas fa-bars"></div>
       <nav class="navbar">
         <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="#home">{{ sections.home.name }}</a></li>
+          <li><a href="#about">{{ sections.about-us.name }}</a></li>
+          <li><a href="#services">{{ sections.services.name }}</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <li><a href="#team">Equipo</a></li>
+          <li><a href="#team">{{ sections.team.name }}</a></li>
           <!-- <li><a href="html/careers.html">Careers</a></li> -->
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#contact">{{ sections.contact.name }}</a></li>
           <!-- <li><a href="#faq">FAQ</a></li> -->
         </ul>
       </nav>
@@ -147,9 +147,9 @@
 
     <section id="home" class="home">
       <div class="overlay"></div>
-      <h1 style="z-index: 1000">Distribuciones Marso</h1>
+      <h1 style="z-index: 1000">{{title}}</h1>
       <h2 style="margin-top: 10px; z-index: 1000">
-        Su distribuidor de confianza
+        {{ subtitle }}
       </h2>
       <div style="z-index: 1000" class="wave wave1"></div>
       <div style="z-index: 1000" class="wave wave2"></div>
@@ -157,10 +157,10 @@
     </section>
 
     <section class="about" id="about" style="min-height: 35vh">
-      <h1 class="heading">Sobre nosotros</h1>
+      <h1 class="heading">{{ sections.about-us.name }}</h1>
       <div class="row">
         <div class="content">
-          <h3>Proveemos servicios de distribución y suministro de alimentos y bebidas para restaurantes en toda España.</h3> <p></p>
+          {{{ sections.about-us.content }}}
         </div>
       </div>
     </section>
@@ -169,44 +169,44 @@
       <div class="container">
         <div class="row">
           <div class="section-head col-sm-12" id="service">
-            <h1>Nuestros servicios</h1> <p> Distribucion de bebidas y restauración.</p>
+            {{{ sections.services.content }}}
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item">
               <span class="icon feature_box_col_one"
-                ><i class="fa fa-glass"></i
+                ><i class="{{ sections.services.cards.card1.icon }}"></i
               ></span>
               <h6 style="font-family: &quot;Poppins&quot;, sans-serif">
-                Distribución de bebidas
+                {{ sections.services.cards.card1.title }}
               </h6>
               <p style="font-family: &quot;Poppins&quot;, sans-serif">
-                Disponemos de la más amplia gama de bebidas para tu restaurante o comercio.
+                {{ sections.services.cards.card1.content }}
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item">
               <span class="icon feature_box_col_two"
-                ><i class="fa fa-shopping-cart"></i
+                ><i class="{{ sections.services.cards.card2.icon }}"></i
               ></span>
               <h6 style="font-family: &quot;Poppins&quot;, sans-serif">
-                Servicio confiable
+                {{ sections.services.cards.card2.title }}
               </h6>
               <p style="font-family: &quot;Poppins&quot;, sans-serif">
-                Realizamos un servicio a domicilio ajustado a sus necesidades.
+                {{ sections.services.cards.card2.content }}
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item">
               <span class="icon feature_box_col_three"
-                ><i class="fa fa-eur"></i
+                ><i class="{{ sections.services.cards.card3.icon }}"></i
               ></span>
               <h6 style="font-family: &quot;Poppins&quot;, sans-serif">
-                Relación calidad-precio
+                {{ sections.services.cards.card3.title }}
               </h6>
               <p style="font-family: &quot;Poppins&quot;, sans-serif">
-                Gran calidad a un precio asequible.
+                {{ sections.services.cards.card3.content }}
               </p>
             </div>
           </div>
@@ -231,7 +231,7 @@
         style="text-align: center; color: white"
       >
         <h4 style="margin-top: -5rem; color: white" id="portfolio">
-          Nuestros números
+          {{ sections.portfolio.title }}
         </h4>
       </div>
       <div class="container">
@@ -327,9 +327,9 @@
     </div> -->
 
     <div class="communicate">
-      <h3>Preparado para dar el salto en tu negocio?</h3>
+      <h3>{{ sections.comunication.title }}</h3>
       <p>
-        Ya quieras ampliar o mejorar tu catálogo de productos, somos lo que estás buscando.
+        {{ sections.comunication.content }}
       </p>
       <a href="#contact"
         ><button class="btn" id="contactNow">Contact Now</button></a
@@ -438,7 +438,7 @@
           <h2>Our Clients</h2>
           <p>
             At Huong Hua Co. Ltd., we pride ourselves on transforming spaces
-            with our Su distribuidor de confianza. Our clients range from
+            with our {{ subtitle }}. Our clients range from
             individual homeowners to large commercial entities.
           </p>
         </div>
@@ -550,9 +550,9 @@
     </section> -->
 
     <section id="contact" class="contact">
-      <h1 class="heading">Ponte en contacto</h1>
+      <h1 class="heading">{{ sections.contact-form.title }}</h1>
       <p style="font-size: 2rem; margin-bottom: 50px">
-        Escribenos para saber más
+        {{ sections.contact-form.content }}
       </p>
     </section>
     <div class="contact-in">
@@ -770,14 +770,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Sobre nosotros</h4>
+              <h4>{{ sections.about-us.name }}</h4>
               <ul>
                 <li>
                   <i class="ion-ios-arrow-forward"></i> <a href="#">Home</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="#about">Sobre nosotros</a>
+                  <a href="#about">{{ sections.about-us.name }}</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
@@ -845,7 +845,7 @@
               <p>
                 Join our mailing list for insights on the latest trends in
                 bathroom designs and exclusive updates on Huong Hua Co. Ltd.'s
-                Su distribuidor de confianza.
+                {{ subtitle }}.
               </p>
               <form action="https://formspree.io/f/xayryypl" method="POST">
                 <input
@@ -877,7 +877,7 @@
             class="col-md-6 copyright"
             style="color: #fff; font-size: 1.3rem"
           >
-            Copyright &copy; 2023 Distribuciones Marso All Rights Reserved.
+            Copyright &copy; 2023 {{ title }} All Rights Reserved.
           </div>
         </div>
       </div>

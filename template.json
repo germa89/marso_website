@@ -1,0 +1,66 @@
+{
+    "title": "Distribuciones Marso",
+    "subtitle": "Su distribuidor de confianza",
+    "meta": {
+      "description": "",
+      "keywords": "",
+      "author": "Distribuciones Marso",
+      "theme-color": "#fafbfc",
+      "language": "es"
+    },
+    "canonical": "https://hoangsonww.github.io/Huong-Hua-Co-Ltd/",
+    "logo-image": "images/logo_marso_invert_transparent.png",
+    "logo-format": "style=\"width: 150px; height: 90px; border-radius: 4px\"",
+    "favicon": "images/favicon.ico",
+    "google": {
+      "adsense-account": "ca-pub-6608388491200814",
+      "analytics": "G-8E7FN4J1GC"
+    },
+    "sections": {
+      "home": {
+        "name": "Inicio"
+      },
+      "about-us": {
+        "name": "Sobre nosotros",
+        "content": "<h3>Proveemos servicios de distribución y suministro de alimentos y bebidas para restaurantes en toda España.</h3> <p></p>"
+      },
+      "services": {
+        "name": "Servicios",
+        "content": "<h1>Nuestros servicios</h1> <p> Distribucion de bebidas y restauración.</p>",
+        "cards": {
+          "card1": {
+            "icon": "fa fa-glass",
+            "title": "Distribución de bebidas",
+            "content": "Disponemos de la más amplia gama de bebidas para tu restaurante o comercio."
+          },
+          "card2": {
+            "icon": "fa fa-shopping-cart",
+            "title": "Servicio confiable",
+            "content": "Realizamos un servicio a domicilio ajustado a sus necesidades."
+          },
+          "card3": {
+            "icon": "fa fa-eur",
+            "title": "Relación calidad-precio",
+            "content": "Gran calidad a un precio asequible."
+          }
+        }
+      },
+      "team": {
+        "name": "Equipo"
+      },
+      "contact": {
+        "name": "Contacto"
+      },
+      "portfolio": {
+        "title": "Nuestros números"
+      },
+      "comunication": {
+        "title": "Preparado para dar el salto en tu negocio?",
+        "content": "Ya quieras ampliar o mejorar tu catálogo de productos, somos lo que estás buscando."
+      },
+      "contact-form": {
+        "title": "Ponte en contacto",
+        "content": "Escribenos para saber más"
+      }
+    }
+  }
