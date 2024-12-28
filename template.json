@@ -9,6 +9,8 @@
       "language": "es"
     },
     "canonical": "https://hoangsonww.github.io/Huong-Hua-Co-Ltd/",
+    "logo-central": "images/logo_marso_invert_transparent.png",
+    "logo-central-brands": "images/brands-white.png",
     "logo-image": "images/logo_marso_invert_transparent.png",
     "logo-format": "style=\"width: 150px; height: 90px; border-radius: 4px\"",
     "favicon": "images/favicon.ico",
@@ -22,7 +24,7 @@
       },
       "about-us": {
         "name": "Sobre nosotros",
-        "content": "<h3>Proveemos servicios de distribución y suministro de alimentos y bebidas para restaurantes en toda España.</h3> <p></p>"
+        "content": "<h3>Proveemos servicios de distribución de alimentos y bebidas para restaurantes.</h3> <p></p>"
       },
       "services": {
         "name": "Servicios",
@@ -49,7 +51,10 @@
         "name": "Equipo"
       },
       "contact": {
-        "name": "Contacto"
+        "name": "Contacto",
+        "address": "Polígono industrial La Dehesa\nHinojosa del Duque\nCórdoba 14270\nEspaña",
+        "phone": "",
+        "email": "marsodistribuciones@gmail.com"
       },
       "portfolio": {
         "title": "Nuestros números"
@@ -61,6 +66,15 @@
       "contact-form": {
         "title": "Ponte en contacto",
         "content": "Escribenos para saber más"
+      },
+      "terms-conditions": {
+        "name": "Terminos y condiciones"
+      },
+      "privacy": {
+        "name": "Privacidad"
+      },
+      "useful-links": {
+        "name": "Links"
       }
     }
   }

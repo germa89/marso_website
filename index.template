@@ -135,9 +135,9 @@
         <ul>
           <li><a href="#home">{{ sections.home.name }}</a></li>
           <li><a href="#about">{{ sections.about-us.name }}</a></li>
-          <li><a href="#services">{{ sections.services.name }}</a></li>
+          <li><a href="#service">{{ sections.services.name }}</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <li><a href="#team">{{ sections.team.name }}</a></li>
+          <!-- <li><a href="#team">{{ sections.team.name }}</a></li> -->
           <!-- <li><a href="html/careers.html">Careers</a></li> -->
           <li><a href="#contact">{{ sections.contact.name }}</a></li>
           <!-- <li><a href="#faq">FAQ</a></li> -->
@@ -147,10 +147,14 @@
 
     <section id="home" class="home">
       <div class="overlay"></div>
-      <h1 style="z-index: 1000">{{title}}</h1>
+      <!-- <h1 style="z-index: 1000">{{ title }}</h1> -->
+      <div  style="z-index: 1000"><img src="{{ logo-central }}" alt="Logo Image" width="30%"/></div>
       <h2 style="margin-top: 10px; z-index: 1000">
         {{ subtitle }}
       </h2>
+
+      <div  style="z-index: 1000"><img src="{{ logo-central-brands }}" alt="Logo Image" width="30%"/></div>
+      
       <div style="z-index: 1000" class="wave wave1"></div>
       <div style="z-index: 1000" class="wave wave2"></div>
       <div style="z-index: 1000" class="wave wave3"></div>
@@ -234,26 +238,26 @@
           {{ sections.portfolio.title }}
         </h4>
       </div>
-      <div class="container">
+      <div class="container" style="display: flex; justify-content: center; align-items: center;">
         <div>
           <i class="far fa-clock fa-4x"></i>
-          <div class="counter" data-target="13500">0</div>
-          <h3>Working Hours</h3>
+          <div class="counter" data-target="+35">0</div>
+          <h3>Años de experiencia</h3>
         </div>
-        <div>
+        <!-- <div>
           <i class="fas fa-gift fa-4x"></i>
           <div class="counter" data-target="720">0</div>
           <h3>Completed Projects</h3>
-        </div>
+        </div> -->
         <div>
           <i class="fas fa-users fa-4x"></i>
-          <div class="counter" data-target="480">0</div>
-          <h3>Happy Clients</h3>
+          <div class="counter" data-target="+200">0</div>
+          <h3>Clientes contentos</h3>
         </div>
         <div>
           <i class="fas fa-award fa-4x"></i>
-          <div class="counter" data-target="120">0</div>
-          <h3>Awards Received</h3>
+          <div class="counter" data-target="+9">0</div>
+          <h3>Pueblos abastecidos</h3>
         </div>
       </div>
     </section>
@@ -326,14 +330,14 @@
       </div>
     </div> -->
 
-    <div class="communicate">
+    <div class="communicate" style="min-height: 400px;">
       <h3>{{ sections.comunication.title }}</h3>
       <p>
         {{ sections.comunication.content }}
       </p>
-      <a href="#contact"
-        ><button class="btn" id="contactNow">Contact Now</button></a
-      >
+      <!-- <a href="#contact"
+        ><button class="btn" id="contactNow">Contact Now</button>
+      </a> -->
     </div>
 <!-- 
     <div class="testimonials mt-100">
@@ -569,14 +573,14 @@
       </div>
       <div class="contact-form">
         <form
-          action="https://formspree.io/f/meqyqqkj"
+          action="https://formspree.io/f/mnnnddon"
           method="POST"
           style="text-align: center"
         >
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Nombre"
             class="contact-form-txt"
             required
           />
@@ -585,8 +589,8 @@
             id="phone"
             name="phone"
             required
-            placeholder="Contact number"
-            maxlength="10"
+            placeholder="Teléfono de contacto"
+            maxlength="9"
             class="contact-form-phone"
           />
           <input
@@ -597,7 +601,7 @@
             required
           />
           <textarea
-            placeholder="Your Message"
+            placeholder="Tu mensaje"
             name="message"
             class="contact-form-txtarea"
             required
@@ -605,7 +609,7 @@
           <input type="text" name="_gotcha" style="display: none" />
           <input
             type="submit"
-            value="Submit"
+            value="Enviar"
             id="contactBtn"
             style="color: white"
             class="contact-form-btn"
@@ -613,7 +617,7 @@
         </form>
       </div>
     </div>
-
+<!-- 
     <section class="faq">
       <h1 class="heading" style="margin-top: 1rem; color: #00bfff" id="faq">
         Frequently-Asked Questions
@@ -763,7 +767,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <div class="footer">
       <div class="footer-top">
@@ -773,7 +777,7 @@
               <h4>{{ sections.about-us.name }}</h4>
               <ul>
                 <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#">Home</a>
+                  <i class="ion-ios-arrow-forward"></i> <a href="#">{{ sections.home.name }}</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
@@ -781,40 +785,40 @@
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="#service">Our services</a>
+                  <a href="#service">{{ sections.services.name }}</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="html/terms.html">Terms & condition</a>
+                  <a href="html/terms.html">{{ sections.terms-conditions.name }}</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="html/privacy.html">Privacy policy</a>
+                  <a href="html/privacy.html">{{ sections.privacy.name }}</a>
                 </li>
               </ul>
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4>{{ sections.useful-links.name }}</h4>
               <ul>
-                <li>
+                <!-- <li>
                   <i class="ion-ios-arrow-forward"></i>
                   <a href="#portfolio">Portfolio</a>
-                </li>
+                </li> -->
                 <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a>
+                  <i class="ion-ios-arrow-forward"></i> <a href="#team">{{ sections.team.name }}</a>
                 </li>
-                <li>
+                <!-- <li>
                   <i class="ion-ios-arrow-forward"></i>
                   <a href="html/careers.html">Careers</a>
-                </li>
+                </li> -->
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact">{{ sections.contact.name }}</a>
                 </li>
-                <li>
+                <!-- <li>
                   <i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a>
-                </li>
+                </li> -->
               </ul>
             </div>
 
@@ -822,24 +826,23 @@
               class="col-lg-3 col-md-6 footer-contact"
               style="font-size: 1.5rem"
             >
-              <h4>Contact Us</h4>
+              <h4>{{ sections.contact.name }}</h4>
               <p>
-                83 Nguyen Cu Trinh<br />
-                Nguyen Cu Trinh Ward<br />
-                District 1, Ho Chi Minh City<br />
-                Vietnam <br />
-                <strong>Phone:</strong> +84 833232390<br />
-                <strong>Email:</strong> info@huonghuacoltd.com<br />
-              </p>
 
-              <div class="social-links">
+              {{{ sections.contact.address }}}
+
+              <br><strong>Email:</strong> <a href="{{ sections.contact.email }}">{{ sections.contact.email }}</a><br/>
+              </p>
+              
+
+              <!-- <div class="social-links">
                 <a
                   href="https://www.dnb.com/business-directory/company-profiles.huong_hua_company_limited.24589420a976de026bb58ce834a810d9.html"
                   ><i class="ion-ios-globe"></i
                 ></a>
-              </div>
+              </div> -->
             </div>
-
+<!-- 
             <div class="col-lg-3 col-md-6 footer-newsletter">
               <h4>Stay Updated</h4>
               <p>
@@ -866,7 +869,7 @@
                   value="New Subscription Request"
                 />
               </form>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -877,7 +880,7 @@
             class="col-md-6 copyright"
             style="color: #fff; font-size: 1.3rem"
           >
-            Copyright &copy; 2023 {{ title }} All Rights Reserved.
+            Copyright &copy; 2024 {{ title }} All Rights Reserved.
           </div>
         </div>
       </div>
