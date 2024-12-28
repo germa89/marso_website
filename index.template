@@ -149,33 +149,38 @@
       <div class="overlay"></div>
       <!-- <h1 style="z-index: 1000">{{ title }}</h1> -->
       <div  style="z-index: 1000"><img src="{{ logo-central }}" alt="Logo Image" width="30%"/></div>
-      <h2 style="margin-top: 10px; z-index: 1000">
-        {{ subtitle }}
-      </h2>
 
+      <div></div>
       <div  style="z-index: 1000"><img src="{{ logo-central-brands }}" alt="Logo Image" width="30%"/></div>
-      
+      <br>
+      <div></div>
+      <h3 style="margin-top: 10px; z-index: 1000; color: white" >
+        {{ subtitle }}
+      </h3>
+
       <div style="z-index: 1000" class="wave wave1"></div>
       <div style="z-index: 1000" class="wave wave2"></div>
       <div style="z-index: 1000" class="wave wave3"></div>
     </section>
 
-    <section class="about" id="about" style="min-height: 35vh">
+    <section class="about" id="about" style="min-height: 45vh;padding-top: 50px;padding-bottom: 100px;">
       <h1 class="heading">{{ sections.about-us.name }}</h1>
       <div class="row">
         <div class="content">
-          {{{ sections.about-us.content }}}
+          <h3 style="color: #333;font-size: 2rem;">
+            {{{ sections.about-us.content }}}
+          </h3>
         </div>
       </div>
     </section>
 
-    <div class="pt-5 pb-5" style="background-color: #f2f2f2">
-      <div class="container">
+    <div class="pt-5 pb-5">
+      <div class="container" >
         <div class="row">
-          <div class="section-head col-sm-12" id="service">
+          <div class="section-head col-sm-12" id="service" style="min-height: 25vh;padding-top: 50px;padding-bottom: 50px;">
             {{{ sections.services.content }}}
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6" style="padding-bottom: 15px;">
             <div class="item">
               <span class="icon feature_box_col_one"
                 ><i class="{{ sections.services.cards.card1.icon }}"></i
@@ -188,7 +193,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6" style="padding-bottom: 15px;">
             <div class="item">
               <span class="icon feature_box_col_two"
                 ><i class="{{ sections.services.cards.card2.icon }}"></i
@@ -201,7 +206,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6" style="padding-bottom: 15px;">
             <div class="item">
               <span class="icon feature_box_col_three"
                 ><i class="{{ sections.services.cards.card3.icon }}"></i

@@ -8,12 +8,12 @@
       "theme-color": "#fafbfc",
       "language": "es"
     },
-    "canonical": "https://hoangsonww.github.io/Huong-Hua-Co-Ltd/",
+    "canonical": "https://germa89.github.io/marso_website/",
     "logo-central": "images/logo_marso_invert_transparent.png",
     "logo-central-brands": "images/brands-white.png",
     "logo-image": "images/logo_marso_invert_transparent.png",
-    "logo-format": "style=\"width: 150px; height: 60px; border-radius: 4px\"",
-    "favicon": "images/favicon.ico",
+    "logo-format": "style=\"width: 120px; height: 48px; border-radius: 4px\"",
+    "favicon": "images/favicon_blue.ico",
     "google": {
       "adsense-account": "ca-pub-6608388491200814",
       "analytics": "G-8E7FN4J1GC"
@@ -24,7 +24,7 @@
       },
       "about-us": {
         "name": "Sobre nosotros",
-        "content": "<h3>Proveemos servicios de distribución de alimentos y bebidas para restaurantes.</h3> <p></p>"
+        "content": "Proveemos servicios de distribución de alimentos y bebidas para restaurantes."
       },
       "services": {
         "name": "Servicios",

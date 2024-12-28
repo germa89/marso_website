@@ -1,6 +1,6 @@
 {
-  "short_name": "Huong Hua Co Ltd",
-  "name": "Huong Hua Co., Ltd. - Innovative Bathroom Solutions",
+  "short_name": "Distribuciones Marso",
+  "name": "Distribuciones Marso",
   "icons": [
     {
       "src": "images/image-192x192.png",
@@ -18,6 +18,6 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#002e5f",
-  "description": "Huong Hua Co., Ltd. - Pioneers in providing innovative and high-quality bathroom solutions.",
+  "description": "Distribuciones Marso - Líderes en servicios a hostelería y restauración.",
   "orientation": "portrait"
 }
