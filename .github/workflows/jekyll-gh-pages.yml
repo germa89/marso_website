@@ -38,7 +38,7 @@ jobs:
           node-version: 18
 
       - name: Generate index.html
-        run: npm build-mustache
+        run: npm run build-mustache
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
