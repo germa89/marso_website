@@ -36,6 +36,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+      
+      - name: install
+        run: npm install
 
       - name: Generate index.html
         run: npm run build-mustache
