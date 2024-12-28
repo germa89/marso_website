@@ -12,7 +12,7 @@
     "logo-central": "images/logo_marso_invert_transparent.png",
     "logo-central-brands": "images/brands-white.png",
     "logo-image": "images/logo_marso_invert_transparent.png",
-    "logo-format": "style=\"width: 150px; height: 90px; border-radius: 4px\"",
+    "logo-format": "style=\"width: 150px; height: 60px; border-radius: 4px\"",
     "favicon": "images/favicon.ico",
     "google": {
       "adsense-account": "ca-pub-6608388491200814",
