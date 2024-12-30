@@ -26,7 +26,7 @@ $(document).ready(function () {
       const count = +counter.innerText;
       const inc = target / speed;
       if (count < target) {
-        counter.innerText = count + inc;
+        counter.innerText = Math.ceil(count + inc);
         setTimeout(updateCount, 1);
       } else {
         counter.innerText = target;
