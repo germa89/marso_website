@@ -1,0 +1,8 @@
+services:
+  website:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:80"
+    container_name: marso-website

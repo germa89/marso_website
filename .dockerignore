@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+_site
+
+# Development files
+.devcontainer
+.github
+backend_django
+databases
+
+# Documentation
+README.md
+LICENSE
+
+# Lock files (we use package.json)
+Pipfile
+Pipfile.lock
