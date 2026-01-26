@@ -10,7 +10,6 @@
     "test": "http-server -o",
     "serve": "http-server -o",
     "format": "prettier --write .",
-    "build-vue": "vue-cli-service build",
     "build-mustache": "mustache template.json index.template > index.html"
   },
   "repository": {
@@ -21,15 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.1",
-    "prettier": "^3.3.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "vue": "^3.0.0",
+    "prettier": "^3.8.1",
     "mustache": "^4.2.0"
-  },
-  "devDependencies": {
-    "@vue/cli-service": "^4.5.0",
-    "react-scripts": "4.0.3"
   },
   "bugs": {
     "url": "https://github.com/hoangsonww/Huong-Hua-Co-Ltd/issues"
