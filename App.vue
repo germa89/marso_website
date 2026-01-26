@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <!-- Header Content -->
-      Huong Hua Co. Ltd.
+      Distribuciones Marso
     </header>
 
     <main>
