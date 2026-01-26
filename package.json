@@ -1,5 +1,5 @@
 {
-  "name": "huong-hua-co-ltd-website",
+  "name": "marso-website",
   "version": "1.0.0",
   "description": "Página web de Distribuciones Marso, especializada en distribución de bebidas y hostelería",
   "main": "index.js",
@@ -14,9 +14,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hoangsonww/Huong-Hua-Co-Ltd.git"
+    "url": "https://github.com/germa89/marso_website.git"
   },
-  "author": "Son Nguyen",
+  "author": "German Martinez Ayuso",
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.1",
@@ -24,7 +24,7 @@
     "mustache": "^4.2.0"
   },
   "bugs": {
-    "url": "https://github.com/hoangsonww/Huong-Hua-Co-Ltd/issues"
+    "url": "https://github.com/germa89/marso_website/issues"
   },
-  "homepage": "https://github.com/hoangsonww/Huong-Hua-Co-Ltd#readme"
+  "homepage": "https://github.com/germa89/marso_website#readme"
 }
