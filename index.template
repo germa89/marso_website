@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,12 +42,7 @@
     <meta property="og:image" content="{{ logo-image }}" />
     <link
       rel="alternate"
-      hreflang="en"
-      href="{{ canonical }}"
-    />
-    <link
-      rel="alternate"
-      hreflang="vi"
+      hreflang="es"
       href="{{ canonical }}"
     />
 
@@ -64,7 +59,7 @@
     <meta name="twitter:image" content="{{ logo-image }}" />
     <meta name="google-adsense-account" content="{{ google.adsense-account }}" />
 
-    <title>{{ title }} - Official Website</title>
+    <title>{{ title }} - Distribución de bebidas y hostelería</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -252,7 +247,7 @@
         <!-- <div>
           <i class="fas fa-gift fa-4x"></i>
           <div class="counter" data-target="720">0</div>
-          <h3>Completed Projects</h3>
+          <h3>Proyectos completados</h3>
         </div> -->
         <div>
           <i class="fas fa-users fa-4x"></i>
@@ -827,16 +822,10 @@
               </p>
               
 
-              <!-- <div class="social-links">
-                <a
-                  href="https://www.dnb.com/business-directory/company-profiles.huong_hua_company_limited.24589420a976de026bb58ce834a810d9.html"
-                  ><i class="ion-ios-globe"></i
-                ></a>
-              </div> -->
             </div>
 <!-- 
             <div class="col-lg-3 col-md-6 footer-newsletter">
-              <h4>Stay Updated</h4>
+              <h4>Mantente informado</h4>
               <p>
                 Únete a nuestra lista de correo para recibir las últimas
                 novedades en distribución de bebidas y ofertas exclusivas
@@ -847,18 +836,18 @@
                   type="email"
                   name="email"
                   style="font-size: 14px"
-                  placeholder="Your Email"
+                  placeholder="Tu email"
                   required
                 />
                 <input
                   type="submit"
-                  value="Subscribe"
+                  value="Suscribir"
                   style="font-size: 14px; width: 80px"
                 />
                 <input
                   type="hidden"
                   name="_subject"
-                  value="New Subscription Request"
+                  value="Nueva solicitud de suscripción"
                 />
               </form>
             </div> -->
@@ -882,7 +871,7 @@
       href="#"
       style="cursor: pointer"
       class="back-to-top"
-      title="Get back to the top of the page"
+      title="Volver arriba"
       ><i class="ion-ios-arrow-up"></i
     ></a>
 

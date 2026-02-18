@@ -209,6 +209,11 @@ body {
   font-size: 3rem;
 }
 
+.home h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+
 .col {
   padding-bottom: 10px;
 }
