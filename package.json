@@ -9,6 +9,7 @@
     "build": "npm run build-mustache && npm run start",
     "test": "http-server -o",
     "serve": "http-server -o",
+    "dev": "http-server -o -d",
     "format": "prettier --write .",
     "build-mustache": "mustache template.json index.template > index.html"
   },
