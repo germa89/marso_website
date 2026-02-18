@@ -7,7 +7,7 @@
     "install-deps": "npm install",
     "start": "http-server -o",
     "build": "npm run build-mustache && npm run start",
-    "test": "http-server -o",
+    "test": "node --test tests/build.test.js",
     "serve": "http-server -o",
     "dev": "http-server -o -d",
     "format": "prettier --write .",
