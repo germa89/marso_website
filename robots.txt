@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hoangsonww.github.io/Huong-Hua-Co-Ltd/sitemap.xml
+Sitemap: https://germa89.github.io/marso_website/sitemap.xml

@@ -1,10 +1,10 @@
-# Huong Hua Co., Ltd. Website Backend
+# Distribuciones Marso Website Backend
 
 ---
 
 ## Overview
 
-This directory contains the backend code for Huong Hua Co., Ltd.'s official website. The backend is responsible for handling business logic, database interactions, and API endpoints to support the frontend of the website.
+This directory contains the backend code for Distribuciones Marso's official website. The backend is responsible for handling business logic, database interactions, and API endpoints to support the frontend of the website.
 
 ## Technology Stack
 

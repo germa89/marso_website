@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Careers at Huong Hua Co., Ltd.</title>
+    <title>Empleo en Distribuciones Marso</title>
     <link rel="stylesheet" href="../css/careers.css" />
     <link
       rel="stylesheet"
@@ -56,30 +56,30 @@
       <div class="fas fa-bars"></div>
       <nav class="navbar">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
-          <li><a href="../index.html#about">About</a></li>
-          <li><a href="../index.html#service">Services</a></li>
-          <li><a href="../index.html#portfolio">Portfolio</a></li>
-          <li><a href="../index.html#team">Team</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../index.html#home">Inicio</a></li>
+          <li><a href="../index.html#about">Nosotros</a></li>
+          <li><a href="../index.html#service">Servicios</a></li>
+          <li><a href="../index.html#portfolio">Portafolio</a></li>
+          <li><a href="../index.html#team">Equipo</a></li>
+          <li><a href="careers.html">Empleo</a></li>
+          <li><a href="../index.html#contact">Contacto</a></li>
           <li><a href="../index.html#faq">FAQ</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="home" class="home">
-      <h2 style="z-index: 1000">Careers at Huong Hua Co., Ltd.</h2>
+      <h2 style="z-index: 1000">Empleo en Distribuciones Marso</h2>
       <h3 style="color: white; margin-top: 10px; z-index: 1000">
-        Apply for Career Opportunities at Huong Hua Co., Ltd.
+        Solicita oportunidades de empleo en Distribuciones Marso
       </h3>
     </section>
 
     <section id="career-heading" class="career-heading">
-      <h1 class="heading">Career Opportunities</h1>
+      <h1 class="heading">Oportunidades de Empleo</h1>
       <p>
-        Join our team at Huong Hua Co. Ltd. and help us design and build
-        top-quality bathroom solutions.
+        Únete a nuestro equipo en Distribuciones Marso y ayúdanos a ofrecer
+        servicios de distribución de bebidas de alta calidad.
       </p>
     </section>
 
@@ -90,11 +90,11 @@
           method="POST"
           enctype="multipart/form-data"
         >
-          <!-- Form Fields -->
+          <!-- Campos del Formulario -->
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Nombre"
             class="career-form-txt"
             required
           />
@@ -103,7 +103,7 @@
             id="phone"
             name="phone"
             required
-            placeholder="Contact number"
+            placeholder="Número de teléfono"
             maxlength="10"
             class="career-form-phone"
           />
@@ -115,58 +115,48 @@
             required
           />
 
-          <!-- Career Options Specific to Your Company -->
+          <!-- Opciones de Empleo -->
           <div class="radio-class">
-            <h2 class="name">Which Positions Are You Applying For?</h2>
+            <h2 class="name">¿Para qué puesto desea aplicar?</h2>
             <label class="radio">
-              <input
-                type="radio"
-                name="position"
-                value="Bathroom Designer"
-                required
-              />
+              <input type="radio" name="position" value="Repartidor" required />
               <span class="checkmark"></span>
-              Bathroom Designer
+              Repartidor
             </label>
             <label class="radio">
               <input
                 type="radio"
                 name="position"
-                value="Project Manager"
+                value="Jefe de Almacén"
                 required
               />
               <span class="checkmark"></span>
-              Project Manager
+              Jefe de Almacén
+            </label>
+            <label class="radio">
+              <input type="radio" name="position" value="Comercial" required />
+              <span class="checkmark"></span>
+              Comercial
             </label>
             <label class="radio">
               <input
                 type="radio"
                 name="position"
-                value="Sales Representative"
+                value="Supervisor de Logística"
                 required
               />
               <span class="checkmark"></span>
-              Sales Representative
+              Supervisor de Logística
             </label>
             <label class="radio">
               <input
                 type="radio"
                 name="position"
-                value="Construction Supervisor"
+                value="Control de Calidad"
                 required
               />
               <span class="checkmark"></span>
-              Construction Supervisor
-            </label>
-            <label class="radio">
-              <input
-                type="radio"
-                name="position"
-                value="Quality Control Specialist"
-                required
-              />
-              <span class="checkmark"></span>
-              Quality Control Specialist
+              Control de Calidad
             </label>
           </div>
 
@@ -175,33 +165,32 @@
             id="experience"
             name="experience"
             required
-            placeholder="Years of Experience"
+            placeholder="Años de experiencia"
             min="-1"
             max="50"
             class="career-form-experience"
           />
           <textarea
-            placeholder="Cover Letter"
+            placeholder="Carta de presentación"
             name="cover_letter"
             class="career-form-txtarea"
             required
           ></textarea>
 
           <div class="file">
-            <h2 class="name">Upload Your Resume</h2>
-            <input
-              style="font-size: 14px"
-              type="file"
-              name="resume"
-              accept=".doc,.docx,.pdf"
-              required
-            /><br /><br /><br />
+            <p style="font-size: 14px; color: #555;">
+              Nos pondremos en contacto contigo para solicitar información adicional, como tu currículum y otros detalles necesarios para evaluar tu candidatura.
+            </p>
           </div>
 
-          <input type="hidden" name="_subject" value="New Career Inquiry!" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nueva solicitud de empleo"
+          />
 
           <div class="file">
-            <h2 class="name">How Did You Hear About Us?</h2>
+            <h2 class="name">¿Cómo nos conociste?</h2>
             <select
               name="hear_about_us"
               class="career-form-select"
@@ -213,15 +202,15 @@
               <option value="Instagram">Instagram</option>
               <option value="LinkedIn">LinkedIn</option>
               <option value="Twitter">Twitter</option>
-              <option value="Friend">Friend</option>
-              <option value="Other">Other</option>
+              <option value="Amigo">Un amigo</option>
+              <option value="Otro">Otro</option>
             </select>
           </div>
 
           <div style="text-align: center">
             <input
               type="submit"
-              value="Submit"
+              value="Enviar"
               style="color: white"
               class="career-form-btn"
             />
@@ -235,49 +224,49 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>About Us</h4>
+              <h4>Sobre Nosotros</h4>
               <ul>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#home">Home</a>
+                  <a href="../index.html#home">Inicio</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#about">About us</a>
+                  <a href="../index.html#about">Nosotros</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#service">Our services</a>
+                  <a href="../index.html#service">Nuestros servicios</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#home">Terms & condition</a>
+                  <a href="terms.html">Términos y condiciones</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#home">Privacy policy</a>
+                  <a href="privacy.html">Política de privacidad</a>
                 </li>
               </ul>
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4>Enlaces Útiles</h4>
               <ul>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#portfolio">Portfolio</a>
+                  <a href="../index.html#portfolio">Portafolio</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#team">Team</a>
+                  <a href="../index.html#team">Equipo</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="careers.html">Careers</a>
+                  <a href="careers.html">Empleo</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
-                  <a href="../index.html#contact">Contact</a>
+                  <a href="../index.html#contact">Contacto</a>
                 </li>
                 <li>
                   <i class="ion-ios-arrow-forward"></i>
@@ -290,42 +279,38 @@
               class="col-lg-3 col-md-6 footer-contact"
               style="font-size: 1.5rem"
             >
-              <h4>Contact Us</h4>
+              <h4>Contáctenos</h4>
               <p>
-                83 Nguyen Cu Trinh<br />
-                Nguyen Cu Trinh Ward<br />
-                District 1, Ho Chi Minh City<br />
-                Vietnam <br />
-                <strong>Phone:</strong> +84 833232390<br />
-                <strong>Email:</strong> info@huonghuacoltd.com<br />
+                Calle Gran Vía 28<br />
+                28013 Madrid<br />
+                España <br />
+                <strong>Teléfono:</strong> +34 912 345 678<br />
+                <strong>Email:</strong> info@distribucionesmarso.es<br />
               </p>
 
               <div class="social-links">
-                <a
-                  href="https://www.dnb.com/business-directory/company-profiles.huong_hua_company_limited.24589420a976de026bb58ce834a810d9.html"
-                  ><i class="ion-ios-globe"></i
-                ></a>
+                <a href="#"><i class="ion-ios-globe"></i></a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6 footer-newsletter">
-              <h4>Stay Updated</h4>
+              <h4>Mantente Informado</h4>
               <p>
-                Join our mailing list for insights on the latest trends in
-                bathroom designs and exclusive updates on Huong Hua Co. Ltd.'s
-                innovative bathroom solutions.
+                Únete a nuestra lista de correo para recibir las últimas
+                novedades en distribución de bebidas y productos de hostelería
+                de Distribuciones Marso.
               </p>
               <form action="https://formspree.io/f/xayryypl" method="POST">
                 <input
                   type="email"
                   name="email"
                   style="font-size: 14px"
-                  placeholder="Your Email"
+                  placeholder="Tu Email"
                   required
                 />
                 <input
                   type="submit"
-                  value="Subscribe"
+                  value="Suscribirse"
                   style="font-size: 14px; width: 80px"
                 />
                 <input
@@ -345,7 +330,8 @@
             class="col-md-6 copyright"
             style="color: #fff; font-size: 1.3rem"
           >
-            Copyright &copy; 2023 Huong Hua Co., Ltd. All Rights Reserved.
+            Copyright &copy; 2023 Distribuciones Marso. Todos los derechos
+            reservados.
           </div>
         </div>
       </div>
@@ -355,7 +341,7 @@
       href="#"
       style="cursor: pointer"
       class="back-to-top"
-      title="Get back to the top of the page"
+      title="Volver arriba"
       ><i class="ion-ios-arrow-up"></i
     ></a>
 
