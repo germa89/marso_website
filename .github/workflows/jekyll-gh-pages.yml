@@ -2,10 +2,10 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Runs on pushes targeting the default branch
-  pull_request:
+  # Runs on tags matching vXX.Y.Z
   push:
-    branches: ["main"]
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -52,13 +52,30 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
+  # Release job
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref_type == 'tag'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: release
+    if: github.ref_type == 'tag'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
